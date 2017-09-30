@@ -8,6 +8,7 @@ target 'Boilermake5' do
   # Pods for Boilermake5
   pod 'Realm'
   pod 'RealmSwift'
+  pod 'FontAwesomeKit'
 
   target 'Boilermake5Tests' do
     inherit! :search_paths
