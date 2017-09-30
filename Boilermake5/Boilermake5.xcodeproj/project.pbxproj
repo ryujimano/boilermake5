@@ -1,0 +1,808 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		46535E821F7F423D006B4981 /* MarkDownParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46535E811F7F423D006B4981 /* MarkDownParser.swift */; };
+		46535E841F7F615B006B4981 /* MarkDownHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46535E831F7F615B006B4981 /* MarkDownHeader.swift */; };
+		46726F501F7F374C00F8A6FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46726F4F1F7F374C00F8A6FB /* AppDelegate.swift */; };
+		46726F551F7F374C00F8A6FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46726F531F7F374C00F8A6FB /* Main.storyboard */; };
+		46726F571F7F374C00F8A6FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46726F561F7F374C00F8A6FB /* Assets.xcassets */; };
+		46726F5A1F7F374C00F8A6FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46726F581F7F374C00F8A6FB /* LaunchScreen.storyboard */; };
+		46726F651F7F374D00F8A6FB /* Boilermake5Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46726F641F7F374D00F8A6FB /* Boilermake5Tests.swift */; };
+		46726F701F7F374D00F8A6FB /* Boilermake5UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46726F6F1F7F374D00F8A6FB /* Boilermake5UITests.swift */; };
+		6581D9CDB04128BCA41A63D6 /* Pods_Boilermake5UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9EE9C451A2B7438D421A164 /* Pods_Boilermake5UITests.framework */; };
+		BB1AF03718B87476D75116F6 /* Pods_Boilermake5Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3684E3074E8EAA90902A3F5C /* Pods_Boilermake5Tests.framework */; };
+		EB53A3AB7D27AD71D2FB0E4E /* Pods_Boilermake5.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E09C3E7AF689CDB72C46F841 /* Pods_Boilermake5.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		46726F611F7F374D00F8A6FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46726F441F7F374C00F8A6FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 46726F4B1F7F374C00F8A6FB;
+			remoteInfo = Boilermake5;
+		};
+		46726F6C1F7F374D00F8A6FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46726F441F7F374C00F8A6FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 46726F4B1F7F374C00F8A6FB;
+			remoteInfo = Boilermake5;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0A97A26E33478CB14643F474 /* Pods-Boilermake5UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Boilermake5UITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Boilermake5UITests/Pods-Boilermake5UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		11AAC6001B2B5777131A92DC /* Pods-Boilermake5Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Boilermake5Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Boilermake5Tests/Pods-Boilermake5Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		31D84257F249DE7B022F73AC /* Pods-Boilermake5.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Boilermake5.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Boilermake5/Pods-Boilermake5.debug.xcconfig"; sourceTree = "<group>"; };
+		3684E3074E8EAA90902A3F5C /* Pods_Boilermake5Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Boilermake5Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CD8B5BFEDB151250E6FE762 /* Pods-Boilermake5UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Boilermake5UITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Boilermake5UITests/Pods-Boilermake5UITests.release.xcconfig"; sourceTree = "<group>"; };
+		46535E811F7F423D006B4981 /* MarkDownParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkDownParser.swift; sourceTree = "<group>"; };
+		46535E831F7F615B006B4981 /* MarkDownHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkDownHeader.swift; sourceTree = "<group>"; };
+		46726F4C1F7F374C00F8A6FB /* Boilermake5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Boilermake5.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		46726F4F1F7F374C00F8A6FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		46726F541F7F374C00F8A6FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		46726F561F7F374C00F8A6FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		46726F591F7F374C00F8A6FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		46726F5B1F7F374C00F8A6FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46726F601F7F374D00F8A6FB /* Boilermake5Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Boilermake5Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		46726F641F7F374D00F8A6FB /* Boilermake5Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Boilermake5Tests.swift; sourceTree = "<group>"; };
+		46726F661F7F374D00F8A6FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46726F6B1F7F374D00F8A6FB /* Boilermake5UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Boilermake5UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		46726F6F1F7F374D00F8A6FB /* Boilermake5UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Boilermake5UITests.swift; sourceTree = "<group>"; };
+		46726F711F7F374D00F8A6FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		847C699AC050C940CF7DC969 /* Pods-Boilermake5Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Boilermake5Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Boilermake5Tests/Pods-Boilermake5Tests.release.xcconfig"; sourceTree = "<group>"; };
+		8705E644967A8E42818CE155 /* Pods-Boilermake5.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Boilermake5.release.xcconfig"; path = "Pods/Target Support Files/Pods-Boilermake5/Pods-Boilermake5.release.xcconfig"; sourceTree = "<group>"; };
+		D9EE9C451A2B7438D421A164 /* Pods_Boilermake5UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Boilermake5UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E09C3E7AF689CDB72C46F841 /* Pods_Boilermake5.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Boilermake5.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		46726F491F7F374C00F8A6FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB53A3AB7D27AD71D2FB0E4E /* Pods_Boilermake5.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46726F5D1F7F374D00F8A6FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB1AF03718B87476D75116F6 /* Pods_Boilermake5Tests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46726F681F7F374D00F8A6FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6581D9CDB04128BCA41A63D6 /* Pods_Boilermake5UITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		28729B841FB4521F0B4CF873 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				31D84257F249DE7B022F73AC /* Pods-Boilermake5.debug.xcconfig */,
+				8705E644967A8E42818CE155 /* Pods-Boilermake5.release.xcconfig */,
+				11AAC6001B2B5777131A92DC /* Pods-Boilermake5Tests.debug.xcconfig */,
+				847C699AC050C940CF7DC969 /* Pods-Boilermake5Tests.release.xcconfig */,
+				0A97A26E33478CB14643F474 /* Pods-Boilermake5UITests.debug.xcconfig */,
+				3CD8B5BFEDB151250E6FE762 /* Pods-Boilermake5UITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		46535E7B1F7F3DDF006B4981 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		46535E7C1F7F3DE8006B4981 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		46535E7D1F7F3E01006B4981 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		46535E7E1F7F3E0B006B4981 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				46535E831F7F615B006B4981 /* MarkDownHeader.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		46535E7F1F7F3E11006B4981 /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		46535E801F7F3E3E006B4981 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				46535E811F7F423D006B4981 /* MarkDownParser.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		46726F431F7F374C00F8A6FB = {
+			isa = PBXGroup;
+			children = (
+				46726F4E1F7F374C00F8A6FB /* Boilermake5 */,
+				46726F631F7F374D00F8A6FB /* Boilermake5Tests */,
+				46726F6E1F7F374D00F8A6FB /* Boilermake5UITests */,
+				46726F4D1F7F374C00F8A6FB /* Products */,
+				28729B841FB4521F0B4CF873 /* Pods */,
+				944F13D41A0DF81BD6B828E3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		46726F4D1F7F374C00F8A6FB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				46726F4C1F7F374C00F8A6FB /* Boilermake5.app */,
+				46726F601F7F374D00F8A6FB /* Boilermake5Tests.xctest */,
+				46726F6B1F7F374D00F8A6FB /* Boilermake5UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		46726F4E1F7F374C00F8A6FB /* Boilermake5 */ = {
+			isa = PBXGroup;
+			children = (
+				46535E801F7F3E3E006B4981 /* Helpers */,
+				46535E7F1F7F3E11006B4981 /* API */,
+				46535E7E1F7F3E0B006B4981 /* Models */,
+				46535E7D1F7F3E01006B4981 /* View Models */,
+				46535E7C1F7F3DE8006B4981 /* View Controllers */,
+				46535E7B1F7F3DDF006B4981 /* Views */,
+				46726F4F1F7F374C00F8A6FB /* AppDelegate.swift */,
+				46726F531F7F374C00F8A6FB /* Main.storyboard */,
+				46726F561F7F374C00F8A6FB /* Assets.xcassets */,
+				46726F581F7F374C00F8A6FB /* LaunchScreen.storyboard */,
+				46726F5B1F7F374C00F8A6FB /* Info.plist */,
+			);
+			path = Boilermake5;
+			sourceTree = "<group>";
+		};
+		46726F631F7F374D00F8A6FB /* Boilermake5Tests */ = {
+			isa = PBXGroup;
+			children = (
+				46726F641F7F374D00F8A6FB /* Boilermake5Tests.swift */,
+				46726F661F7F374D00F8A6FB /* Info.plist */,
+			);
+			path = Boilermake5Tests;
+			sourceTree = "<group>";
+		};
+		46726F6E1F7F374D00F8A6FB /* Boilermake5UITests */ = {
+			isa = PBXGroup;
+			children = (
+				46726F6F1F7F374D00F8A6FB /* Boilermake5UITests.swift */,
+				46726F711F7F374D00F8A6FB /* Info.plist */,
+			);
+			path = Boilermake5UITests;
+			sourceTree = "<group>";
+		};
+		944F13D41A0DF81BD6B828E3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E09C3E7AF689CDB72C46F841 /* Pods_Boilermake5.framework */,
+				3684E3074E8EAA90902A3F5C /* Pods_Boilermake5Tests.framework */,
+				D9EE9C451A2B7438D421A164 /* Pods_Boilermake5UITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		46726F4B1F7F374C00F8A6FB /* Boilermake5 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46726F741F7F374D00F8A6FB /* Build configuration list for PBXNativeTarget "Boilermake5" */;
+			buildPhases = (
+				F4F5D286568FE738E064827C /* [CP] Check Pods Manifest.lock */,
+				46726F481F7F374C00F8A6FB /* Sources */,
+				46726F491F7F374C00F8A6FB /* Frameworks */,
+				46726F4A1F7F374C00F8A6FB /* Resources */,
+				578AD44FDAF3A8E82BCCA3E0 /* [CP] Embed Pods Frameworks */,
+				8178841A90365388F26FEB62 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Boilermake5;
+			productName = Boilermake5;
+			productReference = 46726F4C1F7F374C00F8A6FB /* Boilermake5.app */;
+			productType = "com.apple.product-type.application";
+		};
+		46726F5F1F7F374D00F8A6FB /* Boilermake5Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46726F771F7F374D00F8A6FB /* Build configuration list for PBXNativeTarget "Boilermake5Tests" */;
+			buildPhases = (
+				EF42D2DFA0CEAC6A84E8F472 /* [CP] Check Pods Manifest.lock */,
+				46726F5C1F7F374D00F8A6FB /* Sources */,
+				46726F5D1F7F374D00F8A6FB /* Frameworks */,
+				46726F5E1F7F374D00F8A6FB /* Resources */,
+				3866DD358981B8255A900FDC /* [CP] Embed Pods Frameworks */,
+				36552DBEFEED91009E34BF7A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				46726F621F7F374D00F8A6FB /* PBXTargetDependency */,
+			);
+			name = Boilermake5Tests;
+			productName = Boilermake5Tests;
+			productReference = 46726F601F7F374D00F8A6FB /* Boilermake5Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		46726F6A1F7F374D00F8A6FB /* Boilermake5UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46726F7A1F7F374D00F8A6FB /* Build configuration list for PBXNativeTarget "Boilermake5UITests" */;
+			buildPhases = (
+				F6F17A9D03E44E6AFC646E09 /* [CP] Check Pods Manifest.lock */,
+				46726F671F7F374D00F8A6FB /* Sources */,
+				46726F681F7F374D00F8A6FB /* Frameworks */,
+				46726F691F7F374D00F8A6FB /* Resources */,
+				40EA4C66A635C7759EF212FE /* [CP] Embed Pods Frameworks */,
+				A93885D8C68E6B502F4EA63D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				46726F6D1F7F374D00F8A6FB /* PBXTargetDependency */,
+			);
+			name = Boilermake5UITests;
+			productName = Boilermake5UITests;
+			productReference = 46726F6B1F7F374D00F8A6FB /* Boilermake5UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		46726F441F7F374C00F8A6FB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Ryuji Mano";
+				TargetAttributes = {
+					46726F4B1F7F374C00F8A6FB = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					46726F5F1F7F374D00F8A6FB = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 46726F4B1F7F374C00F8A6FB;
+					};
+					46726F6A1F7F374D00F8A6FB = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 46726F4B1F7F374C00F8A6FB;
+					};
+				};
+			};
+			buildConfigurationList = 46726F471F7F374C00F8A6FB /* Build configuration list for PBXProject "Boilermake5" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 46726F431F7F374C00F8A6FB;
+			productRefGroup = 46726F4D1F7F374C00F8A6FB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				46726F4B1F7F374C00F8A6FB /* Boilermake5 */,
+				46726F5F1F7F374D00F8A6FB /* Boilermake5Tests */,
+				46726F6A1F7F374D00F8A6FB /* Boilermake5UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		46726F4A1F7F374C00F8A6FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46726F5A1F7F374C00F8A6FB /* LaunchScreen.storyboard in Resources */,
+				46726F571F7F374C00F8A6FB /* Assets.xcassets in Resources */,
+				46726F551F7F374C00F8A6FB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46726F5E1F7F374D00F8A6FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46726F691F7F374D00F8A6FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		36552DBEFEED91009E34BF7A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Boilermake5Tests/Pods-Boilermake5Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3866DD358981B8255A900FDC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Boilermake5Tests/Pods-Boilermake5Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		40EA4C66A635C7759EF212FE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Boilermake5UITests/Pods-Boilermake5UITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		578AD44FDAF3A8E82BCCA3E0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Boilermake5/Pods-Boilermake5-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8178841A90365388F26FEB62 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Boilermake5/Pods-Boilermake5-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A93885D8C68E6B502F4EA63D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Boilermake5UITests/Pods-Boilermake5UITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF42D2DFA0CEAC6A84E8F472 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F4F5D286568FE738E064827C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F6F17A9D03E44E6AFC646E09 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		46726F481F7F374C00F8A6FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46726F501F7F374C00F8A6FB /* AppDelegate.swift in Sources */,
+				46535E841F7F615B006B4981 /* MarkDownHeader.swift in Sources */,
+				46535E821F7F423D006B4981 /* MarkDownParser.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46726F5C1F7F374D00F8A6FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46726F651F7F374D00F8A6FB /* Boilermake5Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46726F671F7F374D00F8A6FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46726F701F7F374D00F8A6FB /* Boilermake5UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		46726F621F7F374D00F8A6FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 46726F4B1F7F374C00F8A6FB /* Boilermake5 */;
+			targetProxy = 46726F611F7F374D00F8A6FB /* PBXContainerItemProxy */;
+		};
+		46726F6D1F7F374D00F8A6FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 46726F4B1F7F374C00F8A6FB /* Boilermake5 */;
+			targetProxy = 46726F6C1F7F374D00F8A6FB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		46726F531F7F374C00F8A6FB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46726F541F7F374C00F8A6FB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		46726F581F7F374C00F8A6FB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46726F591F7F374C00F8A6FB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		46726F721F7F374D00F8A6FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		46726F731F7F374D00F8A6FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		46726F751F7F374D00F8A6FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31D84257F249DE7B022F73AC /* Pods-Boilermake5.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4UP4696P82;
+				INFOPLIST_FILE = Boilermake5/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ryujimano.Boilermake5;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		46726F761F7F374D00F8A6FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8705E644967A8E42818CE155 /* Pods-Boilermake5.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4UP4696P82;
+				INFOPLIST_FILE = Boilermake5/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ryujimano.Boilermake5;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		46726F781F7F374D00F8A6FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11AAC6001B2B5777131A92DC /* Pods-Boilermake5Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4UP4696P82;
+				INFOPLIST_FILE = Boilermake5Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ryujimano.Boilermake5Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Boilermake5.app/Boilermake5";
+			};
+			name = Debug;
+		};
+		46726F791F7F374D00F8A6FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 847C699AC050C940CF7DC969 /* Pods-Boilermake5Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4UP4696P82;
+				INFOPLIST_FILE = Boilermake5Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ryujimano.Boilermake5Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Boilermake5.app/Boilermake5";
+			};
+			name = Release;
+		};
+		46726F7B1F7F374D00F8A6FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A97A26E33478CB14643F474 /* Pods-Boilermake5UITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4UP4696P82;
+				INFOPLIST_FILE = Boilermake5UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ryujimano.Boilermake5UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Boilermake5;
+			};
+			name = Debug;
+		};
+		46726F7C1F7F374D00F8A6FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CD8B5BFEDB151250E6FE762 /* Pods-Boilermake5UITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4UP4696P82;
+				INFOPLIST_FILE = Boilermake5UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ryujimano.Boilermake5UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Boilermake5;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		46726F471F7F374C00F8A6FB /* Build configuration list for PBXProject "Boilermake5" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46726F721F7F374D00F8A6FB /* Debug */,
+				46726F731F7F374D00F8A6FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46726F741F7F374D00F8A6FB /* Build configuration list for PBXNativeTarget "Boilermake5" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46726F751F7F374D00F8A6FB /* Debug */,
+				46726F761F7F374D00F8A6FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46726F771F7F374D00F8A6FB /* Build configuration list for PBXNativeTarget "Boilermake5Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46726F781F7F374D00F8A6FB /* Debug */,
+				46726F791F7F374D00F8A6FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46726F7A1F7F374D00F8A6FB /* Build configuration list for PBXNativeTarget "Boilermake5UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46726F7B1F7F374D00F8A6FB /* Debug */,
+				46726F7C1F7F374D00F8A6FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 46726F441F7F374C00F8A6FB /* Project object */;
+}
