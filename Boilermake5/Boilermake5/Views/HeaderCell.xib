@@ -25,14 +25,14 @@
                             <constraint firstAttribute="height" constant="1" id="Qqy-Yb-Pa1"/>
                         </constraints>
                     </view>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xZk-w4-BG7">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xZk-w4-BG7">
                         <rect key="frame" x="8" y="8" width="42" height="22.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
-                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 <constraints>
                     <constraint firstItem="xZk-w4-BG7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="1qW-Lq-6uI"/>
                     <constraint firstAttribute="bottom" secondItem="B1O-VD-fQl" secondAttribute="bottom" id="FK6-Qa-Zge"/>
@@ -44,6 +44,10 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="headerLabel" destination="xZk-w4-BG7" id="dah-B8-HIr"/>
+                <outlet property="separatorView" destination="B1O-VD-fQl" id="QqO-uW-QOI"/>
+            </connections>
             <point key="canvasLocation" x="34" y="52"/>
         </tableViewCell>
     </objects>

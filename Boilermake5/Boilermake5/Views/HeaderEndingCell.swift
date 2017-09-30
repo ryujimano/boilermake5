@@ -9,16 +9,16 @@
 import UIKit
 
 class HeaderEndingCell: UITableViewCell {
+    @IBOutlet weak var contentLabel: UILabel!
+    @IBOutlet weak var contentBackView: UIView!
+    @IBOutlet weak var stackView: UIStackView!
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    func setUp(with content: Bool, contentText: String) {
+        if content {
+            stackView.arrangedSubviews[0].isHidden = false
+            contentLabel.text = contentText
+        } else {
+            stackView.arrangedSubviews[0].isHidden = true
+        }
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-    
 }

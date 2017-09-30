@@ -20,6 +20,7 @@ PODS:
     - FontAwesomeKit/Core
   - FontAwesomeKit/Zocial (2.2.1):
     - FontAwesomeKit/Core
+  - Kingfisher (4.1.0)
   - Realm (2.10.2):
     - Realm/Headers (= 2.10.2)
   - Realm/Headers (2.10.2)
@@ -28,14 +29,16 @@ PODS:
 
 DEPENDENCIES:
   - FontAwesomeKit
+  - Kingfisher
   - Realm
   - RealmSwift
 
 SPEC CHECKSUMS:
   FontAwesomeKit: 3614979b3dbb0ec3f7fac1bd760b91f66c31db67
+  Kingfisher: f14df8cbe576bf55f211fa589e9869bceb4ea87d
   Realm: 0ef72b837fb67e9f4b098bac771ddd72c7fdbb69
   RealmSwift: 07a9ae0505091eda6b2ee7c190c3786d6e90a7b0
 
-PODFILE CHECKSUM: 4c088d584db952dc788e525a94cba9841b25155b
+PODFILE CHECKSUM: b09660b54742a36b862bb37f28d3e78c024ef780
 
 COCOAPODS: 1.2.0

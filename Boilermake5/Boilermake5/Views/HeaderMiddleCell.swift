@@ -9,16 +9,9 @@
 import UIKit
 
 class HeaderMiddleCell: UITableViewCell {
+    @IBOutlet weak var contentLabel: UILabel!
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    func setUp(with contentText: String) {
+        contentLabel.text = contentText
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-    
 }

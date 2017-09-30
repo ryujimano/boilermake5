@@ -22,6 +22,12 @@
 		46535E9A1F7FC0C4006B4981 /* ListCarouselCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46535E981F7FC0C4006B4981 /* ListCarouselCell.xib */; };
 		46535E9D1F7FC2C6006B4981 /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46535E9B1F7FC2C6006B4981 /* ListCell.swift */; };
 		46535E9E1F7FC2C6006B4981 /* ListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46535E9C1F7FC2C6006B4981 /* ListCell.xib */; };
+		46535EA11F7FC60F006B4981 /* ShiftedListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46535E9F1F7FC60F006B4981 /* ShiftedListCell.swift */; };
+		46535EA21F7FC60F006B4981 /* ShiftedListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46535EA01F7FC60F006B4981 /* ShiftedListCell.xib */; };
+		46535EA41F7FD07E006B4981 /* SignInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46535EA31F7FD07E006B4981 /* SignInController.swift */; };
+		46535EA61F7FD116006B4981 /* MarkDownListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46535EA51F7FD116006B4981 /* MarkDownListController.swift */; };
+		46535EA91F7FD8C2006B4981 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46535EA81F7FD8C2006B4981 /* UITableView+Extension.swift */; };
+		46535EAB1F7FD8D7006B4981 /* NSObject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46535EAA1F7FD8D7006B4981 /* NSObject+Extension.swift */; };
 		46726F501F7F374C00F8A6FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46726F4F1F7F374C00F8A6FB /* AppDelegate.swift */; };
 		46726F551F7F374C00F8A6FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46726F531F7F374C00F8A6FB /* Main.storyboard */; };
 		46726F571F7F374C00F8A6FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46726F561F7F374C00F8A6FB /* Assets.xcassets */; };
@@ -71,6 +77,12 @@
 		46535E981F7FC0C4006B4981 /* ListCarouselCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListCarouselCell.xib; sourceTree = "<group>"; };
 		46535E9B1F7FC2C6006B4981 /* ListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
 		46535E9C1F7FC2C6006B4981 /* ListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListCell.xib; sourceTree = "<group>"; };
+		46535E9F1F7FC60F006B4981 /* ShiftedListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShiftedListCell.swift; sourceTree = "<group>"; };
+		46535EA01F7FC60F006B4981 /* ShiftedListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShiftedListCell.xib; sourceTree = "<group>"; };
+		46535EA31F7FD07E006B4981 /* SignInController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInController.swift; sourceTree = "<group>"; };
+		46535EA51F7FD116006B4981 /* MarkDownListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkDownListController.swift; sourceTree = "<group>"; };
+		46535EA81F7FD8C2006B4981 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		46535EAA1F7FD8D7006B4981 /* NSObject+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Extension.swift"; sourceTree = "<group>"; };
 		46726F4C1F7F374C00F8A6FB /* Boilermake5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Boilermake5.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46726F4F1F7F374C00F8A6FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46726F541F7F374C00F8A6FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -145,6 +157,8 @@
 				46535E981F7FC0C4006B4981 /* ListCarouselCell.xib */,
 				46535E9B1F7FC2C6006B4981 /* ListCell.swift */,
 				46535E9C1F7FC2C6006B4981 /* ListCell.xib */,
+				46535E9F1F7FC60F006B4981 /* ShiftedListCell.swift */,
+				46535EA01F7FC60F006B4981 /* ShiftedListCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -153,6 +167,8 @@
 			isa = PBXGroup;
 			children = (
 				46535E851F7F7FBD006B4981 /* ParsedMarkDownController.swift */,
+				46535EA31F7FD07E006B4981 /* SignInController.swift */,
+				46535EA51F7FD116006B4981 /* MarkDownListController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -187,6 +203,15 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		46535EA71F7FD87E006B4981 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				46535EA81F7FD8C2006B4981 /* UITableView+Extension.swift */,
+				46535EAA1F7FD8D7006B4981 /* NSObject+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		46726F431F7F374C00F8A6FB = {
 			isa = PBXGroup;
 			children = (
@@ -212,6 +237,7 @@
 		46726F4E1F7F374C00F8A6FB /* Boilermake5 */ = {
 			isa = PBXGroup;
 			children = (
+				46535EA71F7FD87E006B4981 /* Extensions */,
 				46535E801F7F3E3E006B4981 /* Helpers */,
 				46535E7F1F7F3E11006B4981 /* API */,
 				46535E7E1F7F3E0B006B4981 /* Models */,
@@ -378,6 +404,7 @@
 				46726F5A1F7F374C00F8A6FB /* LaunchScreen.storyboard in Resources */,
 				46726F571F7F374C00F8A6FB /* Assets.xcassets in Resources */,
 				46726F551F7F374C00F8A6FB /* Main.storyboard in Resources */,
+				46535EA21F7FC60F006B4981 /* ShiftedListCell.xib in Resources */,
 				46535E921F7FBFFB006B4981 /* HeaderMiddleCell.xib in Resources */,
 				46535E9A1F7FC0C4006B4981 /* ListCarouselCell.xib in Resources */,
 			);
@@ -547,9 +574,14 @@
 				46535E911F7FBFFB006B4981 /* HeaderMiddleCell.swift in Sources */,
 				46535E9D1F7FC2C6006B4981 /* ListCell.swift in Sources */,
 				46535E841F7F615B006B4981 /* MarkDownHeader.swift in Sources */,
+				46535EAB1F7FD8D7006B4981 /* NSObject+Extension.swift in Sources */,
+				46535EA11F7FC60F006B4981 /* ShiftedListCell.swift in Sources */,
 				46535E991F7FC0C4006B4981 /* ListCarouselCell.swift in Sources */,
 				46535E8D1F7F9958006B4981 /* HeaderEndingCell.swift in Sources */,
 				46535E951F7FC073006B4981 /* ImageCell.swift in Sources */,
+				46535EA91F7FD8C2006B4981 /* UITableView+Extension.swift in Sources */,
+				46535EA61F7FD116006B4981 /* MarkDownListController.swift in Sources */,
+				46535EA41F7FD07E006B4981 /* SignInController.swift in Sources */,
 				46535E821F7F423D006B4981 /* MarkDownParser.swift in Sources */,
 				46535E861F7F7FBD006B4981 /* ParsedMarkDownController.swift in Sources */,
 			);

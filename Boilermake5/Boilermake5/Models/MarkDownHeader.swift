@@ -8,13 +8,13 @@
 
 import Foundation
 
-enum MarkDownHeaderSize {
-    case h1
-    case h2
-    case h3
-    case h4
-    case h5
-    case h6
+enum MarkDownHeaderSize: CGFloat {
+    case h1 = 28.0
+    case h2 = 26.0
+    case h3 = 24.0
+    case h4 = 22.0
+    case h5 = 20.0
+    case h6 = 18.0
 }
 
 struct MarkDownHeader {
