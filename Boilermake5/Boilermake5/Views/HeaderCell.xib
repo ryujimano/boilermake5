@@ -26,7 +26,7 @@
                         </constraints>
                     </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xZk-w4-BG7">
-                        <rect key="frame" x="8" y="8" width="42" height="22.5"/>
+                        <rect key="frame" x="8" y="8" width="42" height="23.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -35,8 +35,8 @@
                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 <constraints>
                     <constraint firstItem="xZk-w4-BG7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="1qW-Lq-6uI"/>
+                    <constraint firstAttribute="bottom" secondItem="xZk-w4-BG7" secondAttribute="bottom" constant="8" id="8Ph-zQ-e5h"/>
                     <constraint firstAttribute="bottom" secondItem="B1O-VD-fQl" secondAttribute="bottom" id="FK6-Qa-Zge"/>
-                    <constraint firstItem="B1O-VD-fQl" firstAttribute="top" secondItem="xZk-w4-BG7" secondAttribute="bottom" constant="8" id="KJn-qN-yXI"/>
                     <constraint firstItem="B1O-VD-fQl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="cfA-ZI-O2h"/>
                     <constraint firstAttribute="trailing" secondItem="B1O-VD-fQl" secondAttribute="trailing" id="rSS-gq-5Ou"/>
                     <constraint firstItem="xZk-w4-BG7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="rgl-Dy-Z7g"/>

@@ -10,11 +10,11 @@ import UIKit
 
 enum ShiftedLevel: CGFloat {
     case zero = 8.0
-    case first = 16.0
-    case second = 24.0
-    case third = 32.0
-    case fourth = 40.0
-    case fifth = 48.0
+    case first = 20.0
+    case second = 32.0
+    case third = 44.0
+    case fourth = 56.0
+    case fifth = 68.0
 }
 
 class ShiftedListCell: UITableViewCell {

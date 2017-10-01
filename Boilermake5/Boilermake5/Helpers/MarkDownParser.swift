@@ -135,14 +135,14 @@ struct MarkDownParser {
                 words.remove(at: 0)
                 let level = content.shiftLevel
                 if level == ShiftedLevel.zero || level == ShiftedLevel.second || level == ShiftedLevel.fourth {
-                    bullet = FAKFontAwesome.circleIcon(withSize: 14.0).attributedString()
+                    bullet = FAKFontAwesome.circleIcon(withSize: 10.0).attributedString()
                 } else {
-                    bullet = FAKFontAwesome.circleOIcon(withSize: 14.0).attributedString()
+                    bullet = FAKFontAwesome.circleOIcon(withSize: 10.0).attributedString()
                 }
             }
         }
         let regex = try? NSRegularExpression(pattern: "!\\[([^\\[]+)\\]\\(([^\\)]+)\\)", options: [])
-        if let matches = regex?.matches(in: content.contentText, options: [], range: NSRange(location: 0, length: content.contentText.count)) {
+        if let matches = regex?.matches(in: content.contentText, options: [], range: NSRange(location: 0, length: content.contentText.count)), matches.count > 0 {
             element = MarkDownElement.image
             var text = content.contentText
             if let m = matches.first, let rnge = Range(m.range, in: text), let imageURL = text[rnge].range(of: "([^\\)]+)", options: .regularExpression) {

@@ -34,6 +34,15 @@
 		46726F5A1F7F374C00F8A6FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46726F581F7F374C00F8A6FB /* LaunchScreen.storyboard */; };
 		46726F651F7F374D00F8A6FB /* Boilermake5Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46726F641F7F374D00F8A6FB /* Boilermake5Tests.swift */; };
 		46726F701F7F374D00F8A6FB /* Boilermake5UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46726F6F1F7F374D00F8A6FB /* Boilermake5UITests.swift */; };
+		467AB3D61F808FF700505669 /* BlankCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467AB3D41F808FF700505669 /* BlankCell.swift */; };
+		467AB3D71F808FF700505669 /* BlankCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 467AB3D51F808FF700505669 /* BlankCell.xib */; };
+		467AB3D91F809A7800505669 /* EditController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467AB3D81F809A7800505669 /* EditController.swift */; };
+		467AB3DB1F809B7C00505669 /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467AB3DA1F809B7C00505669 /* UICollectionView+Extension.swift */; };
+		467AB3DE1F809C0500505669 /* QuickEditCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467AB3DC1F809C0500505669 /* QuickEditCell.swift */; };
+		467AB3DF1F809C0500505669 /* QuickEditCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 467AB3DD1F809C0500505669 /* QuickEditCell.xib */; };
+		467AB3E21F80B52F00505669 /* MarkDownListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467AB3E01F80B52F00505669 /* MarkDownListCell.swift */; };
+		467AB3E31F80B52F00505669 /* MarkDownListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 467AB3E11F80B52F00505669 /* MarkDownListCell.xib */; };
+		467AB3E51F80B94F00505669 /* MarkDownStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467AB3E41F80B94F00505669 /* MarkDownStorage.swift */; };
 		6581D9CDB04128BCA41A63D6 /* Pods_Boilermake5UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9EE9C451A2B7438D421A164 /* Pods_Boilermake5UITests.framework */; };
 		BB1AF03718B87476D75116F6 /* Pods_Boilermake5Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3684E3074E8EAA90902A3F5C /* Pods_Boilermake5Tests.framework */; };
 		EB53A3AB7D27AD71D2FB0E4E /* Pods_Boilermake5.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E09C3E7AF689CDB72C46F841 /* Pods_Boilermake5.framework */; };
@@ -95,6 +104,15 @@
 		46726F6B1F7F374D00F8A6FB /* Boilermake5UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Boilermake5UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		46726F6F1F7F374D00F8A6FB /* Boilermake5UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Boilermake5UITests.swift; sourceTree = "<group>"; };
 		46726F711F7F374D00F8A6FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		467AB3D41F808FF700505669 /* BlankCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlankCell.swift; sourceTree = "<group>"; };
+		467AB3D51F808FF700505669 /* BlankCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BlankCell.xib; sourceTree = "<group>"; };
+		467AB3D81F809A7800505669 /* EditController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditController.swift; sourceTree = "<group>"; };
+		467AB3DA1F809B7C00505669 /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
+		467AB3DC1F809C0500505669 /* QuickEditCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickEditCell.swift; sourceTree = "<group>"; };
+		467AB3DD1F809C0500505669 /* QuickEditCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuickEditCell.xib; sourceTree = "<group>"; };
+		467AB3E01F80B52F00505669 /* MarkDownListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkDownListCell.swift; sourceTree = "<group>"; };
+		467AB3E11F80B52F00505669 /* MarkDownListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MarkDownListCell.xib; sourceTree = "<group>"; };
+		467AB3E41F80B94F00505669 /* MarkDownStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkDownStorage.swift; sourceTree = "<group>"; };
 		847C699AC050C940CF7DC969 /* Pods-Boilermake5Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Boilermake5Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Boilermake5Tests/Pods-Boilermake5Tests.release.xcconfig"; sourceTree = "<group>"; };
 		8705E644967A8E42818CE155 /* Pods-Boilermake5.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Boilermake5.release.xcconfig"; path = "Pods/Target Support Files/Pods-Boilermake5/Pods-Boilermake5.release.xcconfig"; sourceTree = "<group>"; };
 		D9EE9C451A2B7438D421A164 /* Pods_Boilermake5UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Boilermake5UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -159,6 +177,12 @@
 				46535E9C1F7FC2C6006B4981 /* ListCell.xib */,
 				46535E9F1F7FC60F006B4981 /* ShiftedListCell.swift */,
 				46535EA01F7FC60F006B4981 /* ShiftedListCell.xib */,
+				467AB3D41F808FF700505669 /* BlankCell.swift */,
+				467AB3D51F808FF700505669 /* BlankCell.xib */,
+				467AB3DC1F809C0500505669 /* QuickEditCell.swift */,
+				467AB3DD1F809C0500505669 /* QuickEditCell.xib */,
+				467AB3E01F80B52F00505669 /* MarkDownListCell.swift */,
+				467AB3E11F80B52F00505669 /* MarkDownListCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -169,6 +193,7 @@
 				46535E851F7F7FBD006B4981 /* ParsedMarkDownController.swift */,
 				46535EA31F7FD07E006B4981 /* SignInController.swift */,
 				46535EA51F7FD116006B4981 /* MarkDownListController.swift */,
+				467AB3D81F809A7800505669 /* EditController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -191,6 +216,7 @@
 		46535E7F1F7F3E11006B4981 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				467AB3E41F80B94F00505669 /* MarkDownStorage.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -208,6 +234,7 @@
 			children = (
 				46535EA81F7FD8C2006B4981 /* UITableView+Extension.swift */,
 				46535EAA1F7FD8D7006B4981 /* NSObject+Extension.swift */,
+				467AB3DA1F809B7C00505669 /* UICollectionView+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -399,10 +426,13 @@
 			files = (
 				46535E8E1F7F9958006B4981 /* HeaderEndingCell.xib in Resources */,
 				46535E9E1F7FC2C6006B4981 /* ListCell.xib in Resources */,
+				467AB3D71F808FF700505669 /* BlankCell.xib in Resources */,
 				46535E8A1F7F8CEB006B4981 /* HeaderCell.xib in Resources */,
 				46535E961F7FC073006B4981 /* ImageCell.xib in Resources */,
+				467AB3DF1F809C0500505669 /* QuickEditCell.xib in Resources */,
 				46726F5A1F7F374C00F8A6FB /* LaunchScreen.storyboard in Resources */,
 				46726F571F7F374C00F8A6FB /* Assets.xcassets in Resources */,
+				467AB3E31F80B52F00505669 /* MarkDownListCell.xib in Resources */,
 				46726F551F7F374C00F8A6FB /* Main.storyboard in Resources */,
 				46535EA21F7FC60F006B4981 /* ShiftedListCell.xib in Resources */,
 				46535E921F7FBFFB006B4981 /* HeaderMiddleCell.xib in Resources */,
@@ -569,16 +599,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				467AB3DB1F809B7C00505669 /* UICollectionView+Extension.swift in Sources */,
 				46726F501F7F374C00F8A6FB /* AppDelegate.swift in Sources */,
 				46535E891F7F8CEB006B4981 /* HeaderCell.swift in Sources */,
+				467AB3D61F808FF700505669 /* BlankCell.swift in Sources */,
 				46535E911F7FBFFB006B4981 /* HeaderMiddleCell.swift in Sources */,
 				46535E9D1F7FC2C6006B4981 /* ListCell.swift in Sources */,
 				46535E841F7F615B006B4981 /* MarkDownHeader.swift in Sources */,
 				46535EAB1F7FD8D7006B4981 /* NSObject+Extension.swift in Sources */,
+				467AB3E21F80B52F00505669 /* MarkDownListCell.swift in Sources */,
 				46535EA11F7FC60F006B4981 /* ShiftedListCell.swift in Sources */,
+				467AB3E51F80B94F00505669 /* MarkDownStorage.swift in Sources */,
 				46535E991F7FC0C4006B4981 /* ListCarouselCell.swift in Sources */,
 				46535E8D1F7F9958006B4981 /* HeaderEndingCell.swift in Sources */,
 				46535E951F7FC073006B4981 /* ImageCell.swift in Sources */,
+				467AB3D91F809A7800505669 /* EditController.swift in Sources */,
+				467AB3DE1F809C0500505669 /* QuickEditCell.swift in Sources */,
 				46535EA91F7FD8C2006B4981 /* UITableView+Extension.swift in Sources */,
 				46535EA61F7FD116006B4981 /* MarkDownListController.swift in Sources */,
 				46535EA41F7FD07E006B4981 /* SignInController.swift in Sources */,
