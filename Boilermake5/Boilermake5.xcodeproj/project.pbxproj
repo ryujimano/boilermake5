@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		464F15F41F80D0A30088944F /* TesseractOCR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 464F15F51F80D0A30088944F /* TesseractOCR.framework */; };
+		464F15F71F80D0AB0088944F /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 464F15F61F80D0AB0088944F /* CoreImage.framework */; };
+		464F15F91F80D0C00088944F /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 464F15F81F80D0C00088944F /* libstdc++.6.0.9.tbd */; };
 		46535E821F7F423D006B4981 /* MarkDownParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46535E811F7F423D006B4981 /* MarkDownParser.swift */; };
 		46535E841F7F615B006B4981 /* MarkDownHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46535E831F7F615B006B4981 /* MarkDownHeader.swift */; };
 		46535E861F7F7FBD006B4981 /* ParsedMarkDownController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46535E851F7F7FBD006B4981 /* ParsedMarkDownController.swift */; };
@@ -43,6 +46,11 @@
 		467AB3E21F80B52F00505669 /* MarkDownListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467AB3E01F80B52F00505669 /* MarkDownListCell.swift */; };
 		467AB3E31F80B52F00505669 /* MarkDownListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 467AB3E11F80B52F00505669 /* MarkDownListCell.xib */; };
 		467AB3E51F80B94F00505669 /* MarkDownStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467AB3E41F80B94F00505669 /* MarkDownStorage.swift */; };
+		46F9D2F61F80E68F0041F2EF /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 46F9D2F51F80E68F0041F2EF /* tessdata */; };
+		46F9D2F81F80E6AA0041F2EF /* MarkDownFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F9D2F71F80E6AA0041F2EF /* MarkDownFile.swift */; };
+		46F9D2FC1F80F7E60041F2EF /* NoFilesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F9D2FA1F80F7E60041F2EF /* NoFilesCell.swift */; };
+		46F9D2FD1F80F7E60041F2EF /* NoFilesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46F9D2FB1F80F7E60041F2EF /* NoFilesCell.xib */; };
+		46F9D2FF1F8101C50041F2EF /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F9D2FE1F8101C50041F2EF /* APIClient.swift */; };
 		6581D9CDB04128BCA41A63D6 /* Pods_Boilermake5UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9EE9C451A2B7438D421A164 /* Pods_Boilermake5UITests.framework */; };
 		BB1AF03718B87476D75116F6 /* Pods_Boilermake5Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3684E3074E8EAA90902A3F5C /* Pods_Boilermake5Tests.framework */; };
 		EB53A3AB7D27AD71D2FB0E4E /* Pods_Boilermake5.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E09C3E7AF689CDB72C46F841 /* Pods_Boilermake5.framework */; };
@@ -71,6 +79,9 @@
 		31D84257F249DE7B022F73AC /* Pods-Boilermake5.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Boilermake5.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Boilermake5/Pods-Boilermake5.debug.xcconfig"; sourceTree = "<group>"; };
 		3684E3074E8EAA90902A3F5C /* Pods_Boilermake5Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Boilermake5Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CD8B5BFEDB151250E6FE762 /* Pods-Boilermake5UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Boilermake5UITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Boilermake5UITests/Pods-Boilermake5UITests.release.xcconfig"; sourceTree = "<group>"; };
+		464F15F51F80D0A30088944F /* TesseractOCR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TesseractOCR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		464F15F61F80D0AB0088944F /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		464F15F81F80D0C00088944F /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
 		46535E811F7F423D006B4981 /* MarkDownParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkDownParser.swift; sourceTree = "<group>"; };
 		46535E831F7F615B006B4981 /* MarkDownHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkDownHeader.swift; sourceTree = "<group>"; };
 		46535E851F7F7FBD006B4981 /* ParsedMarkDownController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParsedMarkDownController.swift; sourceTree = "<group>"; };
@@ -113,6 +124,12 @@
 		467AB3E01F80B52F00505669 /* MarkDownListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkDownListCell.swift; sourceTree = "<group>"; };
 		467AB3E11F80B52F00505669 /* MarkDownListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MarkDownListCell.xib; sourceTree = "<group>"; };
 		467AB3E41F80B94F00505669 /* MarkDownStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkDownStorage.swift; sourceTree = "<group>"; };
+		46F9D2F51F80E68F0041F2EF /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
+		46F9D2F71F80E6AA0041F2EF /* MarkDownFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkDownFile.swift; sourceTree = "<group>"; };
+		46F9D2F91F80EF6E0041F2EF /* Boilermake5-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Boilermake5-Bridging-Header.h"; sourceTree = "<group>"; };
+		46F9D2FA1F80F7E60041F2EF /* NoFilesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoFilesCell.swift; sourceTree = "<group>"; };
+		46F9D2FB1F80F7E60041F2EF /* NoFilesCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoFilesCell.xib; sourceTree = "<group>"; };
+		46F9D2FE1F8101C50041F2EF /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		847C699AC050C940CF7DC969 /* Pods-Boilermake5Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Boilermake5Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Boilermake5Tests/Pods-Boilermake5Tests.release.xcconfig"; sourceTree = "<group>"; };
 		8705E644967A8E42818CE155 /* Pods-Boilermake5.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Boilermake5.release.xcconfig"; path = "Pods/Target Support Files/Pods-Boilermake5/Pods-Boilermake5.release.xcconfig"; sourceTree = "<group>"; };
 		D9EE9C451A2B7438D421A164 /* Pods_Boilermake5UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Boilermake5UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,6 +141,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				464F15F91F80D0C00088944F /* libstdc++.6.0.9.tbd in Frameworks */,
+				464F15F71F80D0AB0088944F /* CoreImage.framework in Frameworks */,
+				464F15F41F80D0A30088944F /* TesseractOCR.framework in Frameworks */,
 				EB53A3AB7D27AD71D2FB0E4E /* Pods_Boilermake5.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -183,6 +203,8 @@
 				467AB3DD1F809C0500505669 /* QuickEditCell.xib */,
 				467AB3E01F80B52F00505669 /* MarkDownListCell.swift */,
 				467AB3E11F80B52F00505669 /* MarkDownListCell.xib */,
+				46F9D2FA1F80F7E60041F2EF /* NoFilesCell.swift */,
+				46F9D2FB1F80F7E60041F2EF /* NoFilesCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -209,6 +231,7 @@
 			isa = PBXGroup;
 			children = (
 				46535E831F7F615B006B4981 /* MarkDownHeader.swift */,
+				46F9D2F71F80E6AA0041F2EF /* MarkDownFile.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -217,6 +240,7 @@
 			isa = PBXGroup;
 			children = (
 				467AB3E41F80B94F00505669 /* MarkDownStorage.swift */,
+				46F9D2FE1F8101C50041F2EF /* APIClient.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -272,10 +296,12 @@
 				46535E7C1F7F3DE8006B4981 /* View Controllers */,
 				46535E7B1F7F3DDF006B4981 /* Views */,
 				46726F4F1F7F374C00F8A6FB /* AppDelegate.swift */,
+				46F9D2F51F80E68F0041F2EF /* tessdata */,
 				46726F531F7F374C00F8A6FB /* Main.storyboard */,
 				46726F561F7F374C00F8A6FB /* Assets.xcassets */,
 				46726F581F7F374C00F8A6FB /* LaunchScreen.storyboard */,
 				46726F5B1F7F374C00F8A6FB /* Info.plist */,
+				46F9D2F91F80EF6E0041F2EF /* Boilermake5-Bridging-Header.h */,
 			);
 			path = Boilermake5;
 			sourceTree = "<group>";
@@ -301,6 +327,9 @@
 		944F13D41A0DF81BD6B828E3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				464F15F81F80D0C00088944F /* libstdc++.6.0.9.tbd */,
+				464F15F61F80D0AB0088944F /* CoreImage.framework */,
+				464F15F51F80D0A30088944F /* TesseractOCR.framework */,
 				E09C3E7AF689CDB72C46F841 /* Pods_Boilermake5.framework */,
 				3684E3074E8EAA90902A3F5C /* Pods_Boilermake5Tests.framework */,
 				D9EE9C451A2B7438D421A164 /* Pods_Boilermake5UITests.framework */,
@@ -427,10 +456,12 @@
 				46535E8E1F7F9958006B4981 /* HeaderEndingCell.xib in Resources */,
 				46535E9E1F7FC2C6006B4981 /* ListCell.xib in Resources */,
 				467AB3D71F808FF700505669 /* BlankCell.xib in Resources */,
+				46F9D2F61F80E68F0041F2EF /* tessdata in Resources */,
 				46535E8A1F7F8CEB006B4981 /* HeaderCell.xib in Resources */,
 				46535E961F7FC073006B4981 /* ImageCell.xib in Resources */,
 				467AB3DF1F809C0500505669 /* QuickEditCell.xib in Resources */,
 				46726F5A1F7F374C00F8A6FB /* LaunchScreen.storyboard in Resources */,
+				46F9D2FD1F80F7E60041F2EF /* NoFilesCell.xib in Resources */,
 				46726F571F7F374C00F8A6FB /* Assets.xcassets in Resources */,
 				467AB3E31F80B52F00505669 /* MarkDownListCell.xib in Resources */,
 				46726F551F7F374C00F8A6FB /* Main.storyboard in Resources */,
@@ -508,9 +539,20 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Boilermake5/Pods-Boilermake5-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FontAwesomeKit/FontAwesomeKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/TesseractOCRiOS/TesseractOCR.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FontAwesomeKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TesseractOCR.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -553,13 +595,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Boilermake5Tests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F4F5D286568FE738E064827C /* [CP] Check Pods Manifest.lock */ = {
@@ -568,13 +613,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Boilermake5-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F6F17A9D03E44E6AFC646E09 /* [CP] Check Pods Manifest.lock */ = {
@@ -583,13 +631,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Boilermake5UITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -603,12 +654,15 @@
 				46726F501F7F374C00F8A6FB /* AppDelegate.swift in Sources */,
 				46535E891F7F8CEB006B4981 /* HeaderCell.swift in Sources */,
 				467AB3D61F808FF700505669 /* BlankCell.swift in Sources */,
+				46F9D2F81F80E6AA0041F2EF /* MarkDownFile.swift in Sources */,
 				46535E911F7FBFFB006B4981 /* HeaderMiddleCell.swift in Sources */,
 				46535E9D1F7FC2C6006B4981 /* ListCell.swift in Sources */,
 				46535E841F7F615B006B4981 /* MarkDownHeader.swift in Sources */,
 				46535EAB1F7FD8D7006B4981 /* NSObject+Extension.swift in Sources */,
 				467AB3E21F80B52F00505669 /* MarkDownListCell.swift in Sources */,
 				46535EA11F7FC60F006B4981 /* ShiftedListCell.swift in Sources */,
+				46F9D2FF1F8101C50041F2EF /* APIClient.swift in Sources */,
+				46F9D2FC1F80F7E60041F2EF /* NoFilesCell.swift in Sources */,
 				467AB3E51F80B94F00505669 /* MarkDownStorage.swift in Sources */,
 				46535E991F7FC0C4006B4981 /* ListCarouselCell.swift in Sources */,
 				46535E8D1F7F9958006B4981 /* HeaderEndingCell.swift in Sources */,
@@ -706,6 +760,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -763,6 +818,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -786,12 +842,41 @@
 			baseConfigurationReference = 31D84257F249DE7B022F73AC /* Pods-Boilermake5.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4UP4696P82;
+				DEVELOPMENT_TEAM = 8A4H2873BE;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/FontAwesomeKit\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/Kingfisher\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/Realm\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/RealmSwift\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/TesseractOCRiOS\"",
+				);
+				GCC_OPTIMIZATION_LEVEL = 0;
 				INFOPLIST_FILE = Boilermake5/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libstdc++.6.0.9.dylib",
+					"-lstdc++",
+					"-framework",
+					"\"FontAwesomeKit\"",
+					"-framework",
+					"\"Kingfisher\"",
+					"-framework",
+					"\"Realm\"",
+					"-framework",
+					"\"RealmSwift\"",
+					"-framework",
+					"\"TesseractOCR\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ryujimano.Boilermake5;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "./Boilermake5/Boilermake5-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -802,12 +887,41 @@
 			baseConfigurationReference = 8705E644967A8E42818CE155 /* Pods-Boilermake5.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4UP4696P82;
+				DEVELOPMENT_TEAM = 8A4H2873BE;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/FontAwesomeKit\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/Kingfisher\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/Realm\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/RealmSwift\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/TesseractOCRiOS\"",
+				);
+				GCC_OPTIMIZATION_LEVEL = 0;
 				INFOPLIST_FILE = Boilermake5/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libstdc++.6.0.9.dylib",
+					"-lstdc++",
+					"-framework",
+					"\"FontAwesomeKit\"",
+					"-framework",
+					"\"Kingfisher\"",
+					"-framework",
+					"\"Realm\"",
+					"-framework",
+					"\"RealmSwift\"",
+					"-framework",
+					"\"TesseractOCR\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ryujimano.Boilermake5;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "./Boilermake5/Boilermake5-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

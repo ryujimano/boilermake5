@@ -19,7 +19,8 @@ class EditController: UIViewController {
             collectionView.register(QuickEditCell.self)
         }
     }
-    @IBOutlet weak var collectionViewToBottomConstraint: NSLayoutConstraint!
+//    @IBOutlet weak var collectionViewToBottomConstraint: NSLayoutConstraint!
+    @IBOutlet weak var textViewHeightConstraint: NSLayoutConstraint!
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -37,16 +38,29 @@ class EditController: UIViewController {
 
         self.navigationItem.rightBarButtonItem = UIBarButtonItem.init(title: "Save", style: .done, target: self, action: #selector(EditController.saveButtonTapped))
 
-        NotificationCenter.default.addObserver(self, selector: #selector(EditController.keyboardWillShow), name: Notification.Name.UIKeyboardWillShow, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(EditController.keyboardWillResign), name: Notification.Name.UIKeyboardWillHide, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(EditController.keyboardWillShow), name: Notification.Name.UIKeyboardDidShow, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(EditController.keyboardWillResign), name: Notification.Name.UIKeyboardDidHide, object: nil)
     }
 
     @objc func keyboardWillShow(notification: Notification) {
-        collectionViewToBottomConstraint.constant = notification.userInfo![UIKeyboardFrameEndUserInfoKey] as? CGFloat ?? 0.0
+        let height = (notification.userInfo![UIKeyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue.height ?? 0.0
+
+        print(height)
+        self.view.layoutIfNeeded()
+        UIView.animate(withDuration: 0.3) {
+            self.textViewHeightConstraint.constant -= height
+//            self.collectionViewToBottomConstraint.constant = height
+            self.view.layoutIfNeeded()
+        }
     }
 
     @objc func keyboardWillResign () {
-        collectionViewToBottomConstraint.constant = 0.0
+        self.view.layoutIfNeeded()
+        UIView.animate(withDuration: 0.3) {
+//            self.collectionViewToBottomConstraint.constant = 0.0
+            self.textViewHeightConstraint.constant = self.view.frame.height - 66.0
+            self.view.layoutIfNeeded()
+        }
     }
 
     @objc func saveButtonTapped() {

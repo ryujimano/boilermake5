@@ -25,6 +25,7 @@ class ParsedMarkDownController: UIViewController {
         }
     }
 
+    var md: String?
     var headers: [MarkDownHeader] = []
     
     override func viewDidLoad() {
@@ -38,18 +39,25 @@ class ParsedMarkDownController: UIViewController {
 //        MarkDownParser.shared.parse(markdown: mark).forEach {
 //            print($0)
 //        }
-//        print()
-        MarkDownParser.shared.parse(url: URL(string: "https://raw.githubusercontent.com/ryujimano/cs251/master/project1/README.md?token=AIbZ7d_s-3FsgJ2gpJscoH12JTONHGn6ks5Z2O9ywA%3D%3D")!, success: { (headers) in
-            headers.forEach {
-                print($0)
-            }
-            self.headers = headers
-            DispatchQueue.main.async {
-                self.tableView.reloadData()
-            }
-        }) { (error) in
-            print(error.localizedDescription)
+////        print()
+//        MarkDownParser.shared.parse(url: URL(string: "https://raw.githubusercontent.com/ryujimano/cs251/master/project1/README.md?token=AIbZ7d_s-3FsgJ2gpJscoH12JTONHGn6ks5Z2O9ywA%3D%3D")!, success: { (headers) in
+//            headers.forEach {
+//                print($0)
+//            }
+//            self.headers = headers
+//            DispatchQueue.main.async {
+//                self.tableView.reloadData()
+//            }
+//        }) { (error) in
+//            print(error.localizedDescription)
+//        }
+        guard let md = md else {
+            self.navigationController?.popViewController(animated: true)
+            return
         }
+
+        headers = MarkDownParser.shared.parse(markdown: md)
+        tableView.reloadData()
     }
 
 }
