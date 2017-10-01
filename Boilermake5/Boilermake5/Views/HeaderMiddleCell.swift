@@ -11,7 +11,7 @@ import UIKit
 class HeaderMiddleCell: UITableViewCell {
     @IBOutlet weak var contentLabel: UILabel!
 
-    func setUp(with contentText: String) {
-        contentLabel.text = contentText
+    func setUp(with contentText: NSAttributedString) {
+        contentLabel.attributedText = contentText
     }
 }

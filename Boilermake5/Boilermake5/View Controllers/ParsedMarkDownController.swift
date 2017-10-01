@@ -7,17 +7,20 @@
 //
 
 import UIKit
+import FontAwesomeKit
 
 class ParsedMarkDownController: UIViewController {
     @IBOutlet weak var tableView: UITableView! {
         didSet {
-//            tableView.delegate = self
-//            tableView.dataSource = self
+            tableView.delegate = self
+            tableView.dataSource = self
             tableView.register(cellType: HeaderCell.self)
             tableView.register(cellType: HeaderEndingCell.self)
             tableView.register(cellType: HeaderMiddleCell.self)
             tableView.register(cellType: ImageCell.self)
             tableView.register(cellType: ShiftedListCell.self)
+            tableView.rowHeight = UITableViewAutomaticDimension
+            tableView.estimatedRowHeight = 40.0
         }
     }
 
@@ -64,26 +67,37 @@ extension ParsedMarkDownController: UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-
+        if headers[indexPath.section].header != nil {
+            let cell = tableView.dequeueReuseableCell(with: HeaderCell.self, for: indexPath)
+            cell.setUp(with: headers[indexPath.section])
+            return cell
+        }
+        if indexPath.row == headers[indexPath.section].contents.count - 1 {
+            let cell = tableView.dequeueReuseableCell(with: HeaderEndingCell.self, for: indexPath)
+            cell.setUp(with: false, contentText: "")
+            return cell
+        }
         let content = headers[indexPath.section].contents[indexPath.row]
-        let (element, attributedString, imageURL) = MarkDownParser.shared.parseElement(for: content)
+        let (element, attributedString, bullet, imageURL) = MarkDownParser.shared.parseElement(for: content)
         switch element {
         case MarkDownElement.image:
             let cell = tableView.dequeueReuseableCell(with: ImageCell.self, for: indexPath)
+            cell.setUp(with: imageURL)
+            return cell
         case MarkDownElement.list(let level):
             let cell = tableView.dequeueReuseableCell(with: ShiftedListCell.self, for: indexPath)
+            cell.setUp(with: bullet, contentText: attributedString, shiftedLevel: level)
+            return cell
         case MarkDownElement.orderedList(let level):
             let cell = tableView.dequeueReuseableCell(with: ShiftedListCell.self, for: indexPath)
+            cell.setUp(with: bullet, contentText: attributedString, shiftedLevel: level)
+            return cell
         case MarkDownElement.paragraph:
-            if headers[indexPath.section].contents.count - 1 == indexPath.row {
-                let cell = tableView.dequeueReuseableCell(with: HeaderEndingCell.self, for: indexPath)
-            } else {
-                let cell = tableView.dequeueReuseableCell(with: HeaderMiddleCell.self, for: indexPath)
-            }
+            fallthrough
         default:
-            let cell = tableView.dequeueReuseableCell(with: HeaderCell.self, for: indexPath)
-
-
+            let cell = tableView.dequeueReuseableCell(with: HeaderMiddleCell.self, for: indexPath)
+            cell.setUp(with: attributedString)
+            return cell
         }
     }
 }

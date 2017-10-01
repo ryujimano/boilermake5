@@ -22,9 +22,9 @@ class ShiftedListCell: UITableViewCell {
     @IBOutlet weak var contentLabel: UILabel!
     @IBOutlet weak var contentBackViewLeadingConstraint: NSLayoutConstraint!
 
-    func setUp(with bullet: String, contentText: String, shiftedLevel: ShiftedLevel) {
+    func setUp(with bullet: NSAttributedString?, contentText: NSAttributedString, shiftedLevel: ShiftedLevel) {
         contentBackViewLeadingConstraint.constant = shiftedLevel.rawValue
-        bulletLabel.text = bullet
-        contentLabel.text = contentText
+        bulletLabel.attributedText = bullet
+        contentLabel.attributedText = contentText
     }
 }

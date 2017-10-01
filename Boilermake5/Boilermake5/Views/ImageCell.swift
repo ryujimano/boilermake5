@@ -14,8 +14,12 @@ class ImageCell: UITableViewCell {
     @IBOutlet weak var cellImageView: UIImageView!
     @IBOutlet weak var imageURLLabel: UILabel!
 
-    func setUp(with imageURLString: String) {
+    func setUp(with imageURLString: String?) {
         stackView.arrangedSubviews[1].isHidden = true
+        guard let imageURLString = imageURLString else {
+            stackView.arrangedSubviews[0].isHidden = true
+            return
+        }
         cellImageView.kf.setImage(with: URL(string: imageURLString), placeholder: nil, options: nil, progressBlock: nil) { (image, error, _, _) in
             if error == nil || image == nil {
                 self.stackView.arrangedSubviews[1].isHidden = false

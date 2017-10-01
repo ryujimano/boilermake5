@@ -12,9 +12,9 @@ class HeaderCell: UITableViewCell {
     @IBOutlet weak var headerLabel: UILabel!
     @IBOutlet weak var separatorView: UIView!
 
-    func setUp(with separator: Bool, size: MarkDownHeaderSize, header: String) {
-        headerLabel.text = header
-        headerLabel.font = UIFont.systemFont(ofSize: CGFloat(size.rawValue))
-        separatorView.isHidden = !separator
+    func setUp(with header: MarkDownHeader) {
+        headerLabel.text = header.header
+        headerLabel.font = UIFont.boldSystemFont(ofSize: header.size.rawValue)
+        separatorView.isHidden = !(header.size == .h1 || header.size == .h2)
     }
 }

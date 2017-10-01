@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import FontAwesomeKit
 
 fileprivate let shiftedLevelMap: [Int : ShiftedLevel] = [0 : ShiftedLevel.zero, 1 : ShiftedLevel.first, 2 : ShiftedLevel.second, 3 : ShiftedLevel.third, 4 : ShiftedLevel.fourth, 5 : ShiftedLevel.fifth]
 fileprivate let indentMap: [ShiftedLevel : Int] = [ShiftedLevel.zero : 0, ShiftedLevel.first : 1, ShiftedLevel.second : 2, ShiftedLevel.third : 3, ShiftedLevel.fourth : 4, ShiftedLevel.fifth : 5]
@@ -118,16 +119,26 @@ struct MarkDownParser {
         return headers
     }
 
-    func parseElement(for content: Content) -> (MarkDownElement?, NSAttributedString?, String?) {
+    func parseElement(for content: Content) -> (MarkDownElement, NSAttributedString, NSAttributedString?, String?) {
         var words = content.contentText.components(separatedBy: CharacterSet.whitespaces)
         var element: MarkDownElement = MarkDownElement.paragraph
+        var bullet: NSAttributedString?
         var url: String?
         if words.count > 0 {
             if let match = words[0].range(of: "[0-9]+[.]", options: .regularExpression), match == words[0].startIndex..<words[0].endIndex {
                 words[0] = words[0].trimmingCharacters(in: CharacterSet(charactersIn: "0"))
                 element = MarkDownElement.orderedList(content.shiftLevel)
+                bullet = NSAttributedString(string: words[0])
+                words.remove(at: 0)
             } else if words[0] == "-" || words[0] == "*" || words[0] == "+" {
                 element = MarkDownElement.list(content.shiftLevel)
+                words.remove(at: 0)
+                let level = content.shiftLevel
+                if level == ShiftedLevel.zero || level == ShiftedLevel.second || level == ShiftedLevel.fourth {
+                    bullet = FAKFontAwesome.circleIcon(withSize: 14.0).attributedString()
+                } else {
+                    bullet = FAKFontAwesome.circleOIcon(withSize: 14.0).attributedString()
+                }
             }
         }
         let regex = try? NSRegularExpression(pattern: "!\\[([^\\[]+)\\]\\(([^\\)]+)\\)", options: [])
@@ -142,7 +153,7 @@ struct MarkDownParser {
                 words = text.components(separatedBy: CharacterSet.whitespaces)
             }
         }
-        return (element, NSAttributedString(string: words.joined(separator: " ")), url)
+        return (element, NSAttributedString(string: words.joined(separator: " ")), bullet, url)
     }
 
 }
