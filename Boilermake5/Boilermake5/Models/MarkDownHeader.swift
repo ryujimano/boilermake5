@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 enum MarkDownHeaderSize: CGFloat {
     case h1 = 28.0
@@ -15,10 +16,20 @@ enum MarkDownHeaderSize: CGFloat {
     case h4 = 22.0
     case h5 = 20.0
     case h6 = 18.0
+    case p = 14.0
+}
+
+struct Content {
+    var contentText: String
+    var shiftLevel: ShiftedLevel
 }
 
 struct MarkDownHeader {
-    var header: String
-    var contents: [String]
+    var header: String?
+    var contents: [Content]
     var size: MarkDownHeaderSize
+
+//    func getElement(for content: String) -> MarkDownElement {
+//        return MarkDownParser.shared.parseElement(for: content)
+//    }
 }
